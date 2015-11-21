@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>Lazy Load HTML Content</title>
+		<link rel="stylesheet" type="text/css" href="product.css" />
+	</head>
+	<body id="body">
+		<div id="content" class="content">
+			<h1>Toner Cartridge Sales</h1>
+			<hr />
+			<h2>Lexmark Toner Cartridges</h2>
+			<img src="http://lexmark.com/common/images/icons/lexmark-logo.png" alt="lexmark logo" />
+			<p>
+				<b>Model #</b> LEX 1382100<br />
+				<b>Compatibility:</b> Optra 4049/3112/3116<br />
+				<b>Price:</b> $189.99
+				<br />
+				<br />
+				<b>Model #</b> 	LEX 1380520<br />
+				<b>Compatibility</b> Lexmark 4019/4028/4029<br />
+				<b>Price:</b> $209.00
+			</p>
+			<span class="lazyLoad" data-url="lazyLoad2.html"></span>
+			<span id="lazyButton"><button onClick="lazyLoad()">Load second Item</button></span>
+		</div>
+	</body>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+	<script src="lazyload.js"></script>
+</html>
